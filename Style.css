@@ -1,0 +1,355 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    background-color: #F1F2F4;
+}
+.inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+abbr{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Nav Section Start */
+.nav-bar{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+img{
+    cursor: pointer;
+}
+.search-field{
+    display: flex;
+    background: #F0F5FF;
+    padding: 13px 5px;
+    width: 380px;
+    border-radius: 5px;
+}
+.search-field i{
+    margin-right: 10px;
+    color: gray;
+    padding: 0px 5px;
+}
+.search-field input{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: black;
+    flex: 1;
+    font-size: 15px;
+}
+.login{
+    padding: 12px 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    color: rgb(66, 62, 62);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.sign-up{
+    position: absolute;
+    left: 0;
+    top: 49px;
+    padding: 5px 7px;
+    color: rgb(66, 62, 62);
+    width: 280px;
+    background-color: white;
+    border-radius: 0px 0px 6px 6px;
+    border: 1px solid rgba(82, 79, 79, 0.1);
+    display: none;
+    transition: all 3s;
+}
+.sign-up .top{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding:0px 6px 12px 6px;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.sign-up .items{
+    padding-left: 7px;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.login:hover > .sign-up{
+    display: block;
+}
+.login:hover > #arrow{
+    transform: rotate(180deg);
+}
+.login i{
+    padding: 0 10px;
+}
+.login:hover{
+    background: blue;
+    color: #fff;
+}
+.cart{
+    color: rgb(66, 62, 62);
+}
+.cart i{
+    padding: 0px 6px;
+}
+.seller{
+    color: rgb(66, 62, 62);
+}
+.seller i{
+    padding: 0px 6px;
+}
+.three-dots{
+    position: relative;
+    transition: all 0.7s;
+    padding: 10px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(122, 123, 123);
+}
+.three-dots:hover{
+    background-color: rgb(219, 220, 221);
+}
+.three-dots:hover > .sub{
+    display: block;
+}
+.sub{
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    width: 220px;
+    border: 1px solid rgb(233, 231, 231);
+    background-color: white;
+    color:rgb(66, 62, 62) ;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 0px;
+    display: none;
+}
+.items{
+    padding: 5px 8px;
+}
+.items i{
+    padding: 0px 7px;
+}
+/* Nav Section End */
+
+/* Categories Section */
+.categories{
+    width: 97%;
+    margin: 10px auto;
+    background-color: white;
+    padding: 7px 20px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.categories img{
+    width: 60px;
+    height: 60px;
+    margin: 5px 0px 10px;
+}
+.order .two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order h4{
+    margin-right: 10px;
+}
+.order1{
+    position: relative;
+    cursor: pointer;
+}
+.sub-order{
+    position: absolute;
+    top: 120px;
+    left: -130px;
+    width: 390px;
+    color: rgb(72, 70, 70);
+    display: flex;
+    display: none;
+    z-index: 1000;
+}
+.order1:hover > .sub-order{
+    display: flex;
+}
+.sub-order .first{
+    padding: 5px 30px 5px 8px;
+    border-radius: 8px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+}
+.sub-order .first small:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+.sub-order  .second{
+    background-color: white;
+    box-shadow: 0 0 10px rgb(94, 94, 196);
+    padding: 5px 20px 5px 8px;
+    border-radius: 6px;
+}
+.sub-order .second small:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+.order1:hover{
+    color: blue;
+}
+.order1:hover > .two i{
+    transform: rotate(180deg);
+}
+
+/* Slider Section Start */
+.slider-section{
+    width: 97%;
+    height: 265px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+.arrows-1{
+    width: 40px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    top: 37%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+}
+.arrows-2{
+    width: 40px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    top: 37%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+}
+.arrows{
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+}
+
+/* Item Section */
+.items-section{
+    width: 97%;
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    flex-direction: column;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 20px;
+    width: 100%;
+}
+.top-section i{
+    color: blue;
+    font-size: 25px;
+}
+.mobile-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.mobile-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgba(82, 79, 79, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+}
+.mobile-item img{
+    width: 150px;
+    height: 150px;
+    transition: all 0.5s;
+}
+.mobile-item img:hover{
+    transform: scale(1.1);
+}
+
+/* Three cards section */
+.three-cards{
+    width: 97%;
+    background-color: white;
+    margin: 20px auto;
+}
+.three-cards .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards img{
+    height: 200px;
+    width: 400px;
+}
+
+/* featured-brands */
+.featured-brands{
+    width: 97%;
+    background-color: white;
+    padding:  10px 5px;
+    margin: 20px auto;
+}
+.featured-brands h2{
+    margin: 20px 15px;
+}
+.featured-brands .img-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured-brands .img-div img{
+    width: 400px;
+}
